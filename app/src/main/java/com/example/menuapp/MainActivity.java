@@ -1,3 +1,5 @@
+package com.example.menuapp;
+
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -66,12 +68,12 @@ public class MainActivity extends AppCompatActivity {
 
         bt4 = findViewById(R.id.bt4);
         bt4.setVisibility(View.GONE);
-        bt4.setContentDescription("It's second Button");
+        bt4.setContentDescription("It's fourth Button");
         imgBtList.add(bt4);
 
         bt5 = findViewById(R.id.bt5);
         bt5.setVisibility(View.GONE);
-        bt5.setContentDescription("It's second Button");
+        bt5.setContentDescription("It's fifth Button");
         imgBtList.add(bt5);
 
         menu.setOnClickListener(new View.OnClickListener() {
