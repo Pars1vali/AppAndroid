@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="MainActivity">
+
+    <ImageView
+            android:layout_width="421dp"
+            android:layout_height="848dp" app:srcCompat="@drawable/background" android:id="@+id/imageView"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string"/>
+    <ImageButton
+            android:layout_width="53dp"
+            android:layout_height="51dp" app:srcCompat="?attr/actionModeSelectAllDrawable"
+            android:id="@+id/bt5"
+            android:contentDescription="@string"
+            android:layout_marginEnd="28dp" app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck"
+            android:layout_marginBottom="16dp" app:layout_constraintBottom_toTopOf="@+id/bt4"/>
+    <ImageButton
+            android:layout_width="53dp"
+            android:layout_height="51dp" app:srcCompat="?attr/actionModeCopyDrawable"
+            android:id="@+id/bt4"
+            android:contentDescription="@string"
+            android:layout_marginEnd="28dp" app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck"
+            android:layout_marginBottom="13dp" app:layout_constraintBottom_toTopOf="@+id/bt3"/>
+    <ImageButton
+            android:layout_width="53dp"
+            android:layout_height="51dp" app:srcCompat="?attr/actionModePasteDrawable"
+            android:id="@+id/bt3"
+            android:contentDescription="@string"
+            android:layout_marginEnd="28dp" app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck"
+            android:layout_marginBottom="16dp" app:layout_constraintBottom_toTopOf="@+id/bt2"/>
+    <ImageButton
+            android:layout_width="53dp"
+            android:layout_height="51dp" app:srcCompat="?attr/actionModeShareDrawable"
+            android:id="@+id/bt2"
+            android:contentDescription="@string"
+            android:layout_marginEnd="28dp" app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" android:layout_marginBottom="17dp"
+            app:layout_constraintBottom_toTopOf="@+id/bt1"/>
+    <ImageButton
+            android:layout_width="53dp"
+            android:layout_height="51dp"
+            android:id="@+id/bt1"
+            android:contentDescription="@string"
+            android:layout_marginBottom="44dp" app:layout_constraintBottom_toTopOf="@+id/main_b"
+            android:layout_marginEnd="28dp" app:layout_constraintEnd_toEndOf="parent"
+            tools:srcCompat="?attr/actionModePasteDrawable" tools:ignore="ImageContrastCheck"
+            app:srcCompat="?attr/actionModeCutDrawable"
+            style="@style/Widget.AppCompat.ImageButton"/>
+    <Button
+            android:text="@string"
+            android:layout_width="100dp"
+            android:layout_height="49dp" android:id="@+id/main_b"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="4dp" android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent" tools:ignore="DuplicateSpeakableTextCheck"/>
+
+</android.support.constraint.ConstraintLayout>
